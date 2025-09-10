@@ -79,10 +79,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
-            $mail->Host       = 'mail.newportal.recyclingmanagement.com';
+            $mail->Host       = 'mail.domain.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'customerportal@newportal.recyclingmanagement.com';
-            $mail->Password   = 'RMLScrapman169';
+            $mail->Username   = 'email';
+            $mail->Password   = 'passowrd';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
 
