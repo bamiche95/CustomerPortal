@@ -4,13 +4,13 @@ use PHPMailer\PHPMailer\Exception;
 
 require __DIR__ . '/vendor/autoload.php'; // adjust if your PHPMailer path is different
 
-$smtpHost = 'mail.newportal.recyclingmanagement.com';
+$smtpHost = 'mail.domain.com';
 $smtpPort = 465;
-$smtpUser = 'customerportal@newportal.recyclingmanagement.com';
-$smtpPass = 'RMLScrapman169';
-$fromEmail = 'customerportal@newportal.recyclingmanagement.com';
+$smtpUser = 'test@email.com';
+$smtpPass = 'email_password';
+$fromEmail = 'test@email.com';
 $fromName = 'SMTP Test';
-$toEmail = 'peteriteka@gmail.com';
+$toEmail = 'recipeint_email';
 
 $mail = new PHPMailer(true);
 
