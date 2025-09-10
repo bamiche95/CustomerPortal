@@ -151,14 +151,14 @@ class UserController {
     $mail = new PHPMailer(true);
     try {
         $mail->isSMTP();
-        $mail->Host       = 'mail.newportal.recyclingmanagement.com';
+        $mail->Host       = 'mail.domain.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'customerportal@newportal.recyclingmanagement.com';
-        $mail->Password   = 'RMLScrapman169';
+        $mail->Username   = 'email_address';
+        $mail->Password   = 'email_password';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
-        $mail->setFrom('customerportal@newportal.recyclingmanagement.com', 'CustomerPortal');
+        $mail->setFrom('email_address', 'CustomerPortal');
         $mail->addAddress($email, $name);
         $mail->isHTML(true);
 
@@ -250,7 +250,7 @@ class UserController {
                             <tr>
                                 <td align=\"center\" style=\"padding: 30px 40px; background-color: #ecf0f1; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;\">
                                     <p style=\"margin: 0; font-size: 12px; color: #888888;\">
-                                        &copy; " . date("Y") . " Recycling Management. All Rights Reserved.
+                                        &copy; " . date("Y") . "ABC Limited. All Rights Reserved.
                                     </p>
                                 </td>
                             </tr>
